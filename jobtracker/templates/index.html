@@ -1,0 +1,38 @@
+$def with (table)
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Bootstrap-Themed Tree Widget Documentation</title>
+    <meta name="description" content="Applied Internet Technologies timekeeping software">
+    <meta name="author" content="Applied Internet Technologies: Jeromy French">
+    <meta http-equiv="expires" content="Fri, 21 Jun 2013 20:24:32 GMT" />
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="$config.static/bootstrap-combined.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="$config.static/js/bootstrap-tree.js"></script>
+    <style type="text/css">
+        span.job { float: left; width: 350px; }
+        span.status { float: center; width: 80px; }
+    </style>
+</head>
+<body class="container-fluid" style="">
+    <div class="row-fluid">
+        <section id="demonstration" role="main" class="span12">
+            <h2 id="demo2">JobTracker</h2>
+            <div class="tree" style="min-height:500px">
+                <ul>
+                    $for li in table:
+                        $:li
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,12 @@
+#!/bin/bash
+source ./pipeline_ctrl.sh
+JOB_NAME="job2"
+JOB_LDONE="NULL"
+JOB_HDONE="/user/chenzhihui/serving/done/serve_iimatrix_p13n/2013-08-28.done"
+JOB_COMMAND_LIST="echo 'hi'"
+PID_FILE="./../logs_pid/serving.serve_iimatrix_p13n.pid"
+REGISTER_FILE="/home/chenzhihui/pipeline_register/2013-08-28/serving.serve_iimatrix_p13n.register"
+DEP_JOB_NAME_ARRAY="job1"
+DEP_JOB_HDONE_ARRAY="/data/QIYU/qiyu_2.0/content_filter/done/merge_unified_cf_ct_matrix_c_lizard/2013-08-28.done;/data/QIYU/qiyu_2.0/content_model/done/collect_video_meta/0/cat/2013-08-28.done"
+DEP_JOB_LDONE_ARRAY="NULL;NULL"
+ProcessJob

@@ -1,0 +1,17 @@
+<config>
+    <name>resys_scheduler</name>
+    <db select='mysql'>
+        <sqlite>
+            <name>job_controller.db</name>
+            <check_same_thread>False</check_same_thread>
+            <timeout>5</timeout>
+        </sqlite>
+        <mysql>
+            <name>test</name>
+            <host>bj.resysscheduler.w.qiyi.db</host>
+            <user>resys_scheduler</user>
+            <passwd>resys_scheduler</passwd>
+            <port>8227</port>
+        </mysql>
+    </db>
+</config>

@@ -1,0 +1,12 @@
+#!/bin/bash
+source ./pipeline_ctrl.sh
+JOB_NAME="job1"
+JOB_LDONE="serve_iimatrix_p13n.done"
+JOB_HDONE="NULL"
+JOB_COMMAND_LIST="echo 'hello'; sleep 5"
+PID_FILE="./../logs_pid/serving.serve_iimatrix_p13n.pid"
+REGISTER_FILE="/home/chenzhihui/pipeline_register/2013-09-16/serving.serve_iimatrix_p13n.register"
+DEP_JOB_NAME_ARRAY="dep1.job;dep2.job"
+DEP_JOB_HDONE_ARRAY="NULL;NULL"
+DEP_JOB_LDONE_ARRAY="./test/dep1.done;./test/dep2.done"
+ProcessJob
